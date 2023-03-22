@@ -1,0 +1,22 @@
+.conteneur_carte{
+    background-color: #F6F6F6;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 33.33%;
+    gap: 50px;
+    margin-top: 130px;
+    width: 80%;
+    padding: 5%;
+    margin-left: 5%;
+    border-radius: 15px;
+    justify-content: space-around;
+}
+
+@media screen and (max-width:768px) {
+    .conteneur_carte{
+        background-color: #FFFFFF;
+        margin-top: 0%;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

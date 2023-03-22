@@ -1,0 +1,32 @@
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+    padding-top: 3%;
+}
+
+footer .Kasa_logo{
+    width: 122px;
+    height: 39px;
+    margin-bottom: 1%;
+    filter: grayscale(100%) brightness(200%);
+}
+
+.Footer_text{
+    font-size: 24px;
+}
+
+@media screen and (max-width:768px) {
+    footer .Kasa_logo{
+        padding-top: 10%;
+    }
+
+    .Footer_text{
+        font-size: 12px;
+        margin-bottom: 15%;
+    }
+}

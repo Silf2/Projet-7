@@ -1,0 +1,98 @@
+.collapse_titre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    width: 80%;
+    background-color: #FF6060;
+    margin: 0 auto;
+    border-radius: 5px;
+    position: relative;
+}
+
+.fleche_haut, .fleche_bas{
+    transition: all .2s ease-in-out;
+    width: 2%; 
+}
+
+.fleche_haut{
+    transform: rotate(0deg);  
+}
+
+.fleche_bas{
+    transform: rotate(180deg);
+}
+
+.collapse_text {
+    color: #FF6060;
+    border-radius: 5px;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    font-size: 24px;
+    background-color: #f3f3f3;
+    width: 77%;
+    padding: 2%;
+    line-height: 35px;
+    margin-top: -5px;
+}
+  
+.collapse_text_cache {
+    display: none;
+    transition: all 3s ease-in-out
+}
+
+.fiche_logement_collapse .collapse_titre{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 18px;
+}
+
+.fiche_logement_collapse .collapse_text{
+    width: 99%;
+    height: 284px;
+    overflow-y: auto;
+    font-size: 18px;
+    padding-top: 5%;
+}
+
+.fiche_logement_collapse .fleche_haut, .fiche_logement_collapse .fleche_bas{
+    width: 30px;
+}
+
+@media screen and (max-width:768px) {
+    .collapse_titre{
+        width: 90%;
+    }
+
+    .collapse_text{
+        width: 90%;
+    }
+    
+    .collapse_text, .collapse_titre{
+        font-size: 16px;
+    }
+
+    .fleche_haut, .fleche_bas{
+        width: 10%;
+    }
+    
+    .fiche_logement_collapse .collapse_titre{
+        width: 90%;
+        font-size: 14px;
+        margin-top: 10%;
+    }
+
+    .fiche_logement_collapse .collapse_text{
+        width: 90%;
+        font-size: 13px;
+        padding-top: 1%;
+        line-height: 200%;
+        height: 250px;
+    }
+}

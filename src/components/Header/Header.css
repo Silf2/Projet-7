@@ -1,0 +1,48 @@
+header{
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+.Header_navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.Header_navigation a{
+    text-decoration: none;
+    color : #FF6060;
+}
+
+.Header_navigation a:hover{
+    text-decoration: underline;
+}
+
+.Kasa_logo{
+    width: 210px;
+    height: 68px;
+}
+
+@media screen and (max-width:768px) {
+    header{
+        justify-content:flex-start;
+        gap:15%;
+    }
+
+    .Kasa_logo{
+        width: 145px;
+        height: 47px;
+    }
+
+    .Header_navigation{
+        font-size: 12px;
+        gap: 10px;
+        width: 100%;
+        text-transform: uppercase;
+    }
+}

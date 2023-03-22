@@ -1,0 +1,46 @@
+.Error_text h1, h2, a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color : #FF6060;
+}
+
+h1{
+    font-size: 250px;
+    margin-top: 5%;
+    font-weight: 700;
+}
+
+h2{
+    margin-top: -150px;
+    font-size: 36px;
+}
+
+.Error_text a{
+    margin-top: 15%;
+    text-decoration: none;
+}
+
+.Error_text a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width:768px) {
+    h1{
+        font-size: 96px;
+        margin-top: 50%;
+    }
+
+    h2{
+        font-size: 18px;
+        margin-top: 0;
+        display: flex;
+        text-align: center;
+    }
+
+    .Error_text{
+        font-size: 14px;
+        margin-top: 20%;
+        margin-bottom: 40%;
+    }
+}

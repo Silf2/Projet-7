@@ -1,0 +1,42 @@
+.caroussel{
+    position: relative;
+    display: flex;
+    width: 1240px;
+    height: 415px;
+    border-radius: 25px;
+    background-position: center;
+    background-size: cover;
+    width: 90%;
+    margin: 43px auto;
+}
+
+.fleche_droite_caroussel, .fleche_gauche_caroussel{
+    width: 46px;
+    height: 79px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.fleche_droite_caroussel {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2%;
+}
+
+.fleche_gauche_caroussel {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2%;
+}
+
+@media screen and (max-width:768px) {
+    .caroussel{
+        width: 335px;
+        height: 255px;
+    }
+
+    .fleche_droite_caroussel, .fleche_gauche_caroussel{
+        width: 11px;
+        height: 19px;
+    }
+}

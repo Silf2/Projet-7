@@ -1,0 +1,141 @@
+.texte_fiche_logement{
+    padding-left: 5%;
+    padding-right: 5%;
+    position: relative;
+}
+
+.info_principal{
+    display: flex;
+    justify-content: space-between;
+}
+.nom_logement{
+    color:#FF6060;
+    font-size: 36px;
+}
+
+.localisation{
+    color: #FF6060;
+    font-size: 18px;
+    margin-top: -1%;
+}
+
+.bouton_tag{
+    display: flex;
+    gap: 25px;
+}
+
+button{
+    background-color: #FF6060;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 14px;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    cursor: pointer;
+    margin-top: 1%;
+}
+
+.proprio_note{
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+.info_proprio{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.nom_proprio{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    color : #FF6060;
+    text-align: right;
+    font-weight: 500;
+}
+
+.photo_proprio{
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    margin-right: 0;
+}
+
+.note{
+    display: flex;
+    gap: 10px;
+    margin-top: 20%;
+}
+
+.fiche_logement_collapse{
+    margin-top: 2%;
+    margin-bottom: 10%;
+    display: flex;
+    gap: 10%;
+    justify-content: space-around;
+}
+
+.description_collapse{
+    width: 600px;
+}
+
+.equipement_collapse{
+    width: 600px;
+}
+
+.equipement_collapse .collapse_text{
+    line-height: 15px;
+}
+
+@media screen and (max-width:768px) {
+    .info_principal{
+        flex-direction: column;
+        margin-top: -55%;
+    }
+
+    .nom_logement{
+        font-size: 18px;
+    }
+
+    .localisation{
+        font-size: 14px;
+    }
+    button{
+        font-size: 12px;
+        font-weight: 10;
+    }
+
+    .proprio_note{
+        flex-direction: row-reverse;
+        text-align: center;
+        gap: 10%;
+        margin-top: 10px;
+    }
+
+    .note{
+        margin-top: 10%;
+    }
+    .etoiles{
+        width: 10%;
+        height: 60%;
+    }
+
+    .nom_proprio{
+        font-size: 16px;
+    }
+
+    .fiche_logement_collapse{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .description_collapse, .equipement_collapse{
+        width: 100%;
+    }
+}
+
